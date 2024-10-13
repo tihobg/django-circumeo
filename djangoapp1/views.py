@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 def index(request):
     context = {}
-    patients = Patients.objects.all()
-    context['patients'] = patients
+    score1 = Patients.objects.all()
+    context['score1'] = score1
     context['title'] = 'Home'
     return render(request, 'index.html', context)
 
