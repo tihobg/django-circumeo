@@ -6,10 +6,10 @@
         <th>Name</th>
         <th>Years</th>
     </tr>
-    {% for patient in public.score1 %}
+    {% for patient in score1 %}
         <tr>
             <td>{{ patient.name }}</td>
-            <td> got a {{ patient.years }}</td>
+            <td> got a {{ patient.value }}</td>
         </tr>
     {% endfor %}
 </table>

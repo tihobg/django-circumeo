@@ -4,7 +4,7 @@ from django.db import models
 class Patients(models.Model):
     patient_id = models.SmallAutoField(primary_key=True)
     name = models.CharField(max_length=20, blank=True, null=True)
-    years = models.PositiveIntegerField(blank=True, null=True)
+    value = models.PositiveIntegerField(blank=True, null=True)
     # probe_date = models.DateField(blank=True, null=True)
     # birth_date = models.DateField(blank=True, null=True)
     # arterial_pressure = models.CharField(max_length=20, blank=True, null=True)
@@ -18,6 +18,6 @@ class Patients(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'public.score1'
+        db_table = 'score1'
 
 # Create your models here.
